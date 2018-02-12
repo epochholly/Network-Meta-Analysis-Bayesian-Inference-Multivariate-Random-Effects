@@ -1,0 +1,12 @@
+.DS_Store
+.Rhistory
+.Rapp.history
+.Rproj.user
+*-Ex.R
+*.Rproj
+*.tar.gz
+*.Rcheck/
+*.so
+*.o
+*.*~
+*~
