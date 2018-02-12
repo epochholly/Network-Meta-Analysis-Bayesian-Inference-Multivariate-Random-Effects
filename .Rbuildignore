@@ -1,0 +1,15 @@
+\.tar\.gz$
+\.Rproj$
+^\.Rproj\.user$
+^\.Rhistory$
+\.Rcheck$
+~$
+^\.\#
+^\#
+^\.travis\.yml$
+^\.git$
+^Makefile$
+^COPYRIGHT$
+^LICENSE$
+^docs$
+^_pkgdown\.yml$
