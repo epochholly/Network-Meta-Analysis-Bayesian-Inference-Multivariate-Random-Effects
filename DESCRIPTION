@@ -1,0 +1,11 @@
+Package: NMAnalysis
+Title: Fit the LDL-C network meta-data using the network meta-regression model
+Version: 0.1.0
+Author: Hao Li
+Maintainer: Hao Li <hao.2.li@uconn.edu>
+Description: The R interface for linking in the FORTRAN 95 code.
+License: GPL (>= 3)
+NeedsCompilation: yes
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
