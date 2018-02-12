@@ -476,6 +476,9 @@ c.......compute LPML
         alogcpo(kk)=-gmax(kk)-dlog( sumrep / real(nrep) )
         alpml=alpml+alogcpo(kk)
        enddo
+       alpml = alpml - alogcpo(2)-alogcpo(10)
+     1        - alogcpo(11)
+
 c......compute posterior mean and sd for parameters
        do j=1,nx
         ebeta(j)=sbeta(j)/real(nrep)
