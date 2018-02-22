@@ -41,21 +41,21 @@ NMAmodel <- function(ID_model, Nrep=100L, Nthinning=1L, Nwarmup=10L,
                      seRho=matrix(0.0, 11, 11), Rholow=matrix(0.0, 11, 11), 
                      Rhoupp=matrix(0.0, 11, 11)){
   if(!is.null(Iseed)){set.seed(Iseed)} else return('require a seed value')
-  if(ID_model == 1){
+  if(ID_model == 1L){
     ID_group <- rep(1L, 11)
-  } else if(ID_model == 2){
+  } else if(ID_model == 2L){
     ID_group <- c(1L,2L,2L,2L,2L,2L,3L,4L,4L,4L,4L)
-  } else if(ID_model == 3){
+  } else if(ID_model == 3L){
     ID_group <- c(1L,2L,3L,3L,3L,3L,4L,5L,5L,5L,5L)
-  } else if(ID_model == 4){
+  } else if(ID_model == 4L){
     ID_group <- c(1L,3L,3L,3L,2L,3L,4L,5L,5L,5L,5L)
-  } else if(ID_model == 5){
+  } else if(ID_model == 5L){
     ID_group <- c(1L,3L,2L,3L,3L,3L,4L,5L,5L,5L,5L)
-  } else if(ID_model == 6){
+  } else if(ID_model == 6L){
     ID_group <- c(1L,2L,4L,4L,3L,4L,5L,6L,6L,6L,6L)
-  } else if(ID_model == 7){
+  } else if(ID_model == 7L){
     ID_group <- c(1L,2L,3L,4L,4L,4L,5L,6L,6L,6L,6L)
-  } else if(ID_model == 8){
+  } else if(ID_model == 8L){
     ID_group <- c(1L,4L,2L,4L,3L,4L,5L,6L,6L,6L,6L)
   } 
   ret <- .Fortran("NMAmodel", y1 = as.double(Y), sd1 = as.double(SD),
@@ -77,9 +77,9 @@ NMAmodel <- function(ID_model, Nrep=100L, Nthinning=1L, Nwarmup=10L,
   ret$Beta <- as.data.frame(ret$Beta)
   names(ret$Beta) <- c('MEAN', 'SD', 'HPD Lower', 'HPD Upper')
   ret$Gam <- as.data.frame(ret$Gam)
-  names(ret$Beta) <- c('MEAN', 'SD', 'HPD Lower', 'HPD Upper')
+  names(ret$Gam) <- c('MEAN', 'SD', 'HPD Lower', 'HPD Upper')
   ret$tau2 <- as.data.frame(ret$tau2)
-  names(ret$Beta) <- c('MEAN', 'SD', 'HPD Lower', 'HPD Upper')
+  names(ret$tau2) <- c('MEAN', 'SD', 'HPD Lower', 'HPD Upper')
   output <- list(Size_of_Simmulation = Nrep, 
                 Size_of_Thinning = Nthinning, 
                 Size_of_Warmup = Nwarmup,
