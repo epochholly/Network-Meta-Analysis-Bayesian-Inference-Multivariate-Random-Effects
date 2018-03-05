@@ -10,6 +10,6 @@ Computer code for the Bayesian computation in the paper Li et al. (2017) was wri
 - `make clean`: clean all the temporary files including `*.tar.gz`.
 
 ## Reference:
-Li, H., Chen, M.-H., Ibrahim, J. G., Kim, S., Shah, A. K., Lin, J. and Tershakovec, A. M. (2017): Bayesian Inference for Network
+Li, H., Chen, M.-H., Ibrahim, J. G., Kim, S., Shah, A. K., Lin, J. and Tershakovec, A. M. (2018): Bayesian Inference for Network
 Meta-Regression Using Multivariate Random Effects with Applications to Cholesterol Lowering Drugs. Biostatistics, Invited revision.
 
