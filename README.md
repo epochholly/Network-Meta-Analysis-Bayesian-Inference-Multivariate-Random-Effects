@@ -1,6 +1,6 @@
 # Network-Meta-Analysis-Bayesian-Inference-Multivariate-Random-Effects
 ## About
-Computer code for the Bayesian computation in the paper Li et al. (2017) was written for the FORTRAN 95 compiler. This R package is built as a platform to call in the FORTRAN code.
+Computer code for the Bayesian computation in the paper Li et al. (2018) was written for the FORTRAN 95 compiler. This R package is built as a platform to call in the FORTRAN code.
 
 ## Makefile usage
 - `make`: the default target for building and checking the package as necessary,
